@@ -11,7 +11,7 @@ const StudentList = ({ students }) => {
         ) : (
           students.map((student, index) => (
             <li key={index}>
-              {student.name} - {student.course}
+   {student.name} - {student.course}
             </li>
           ))
         )}

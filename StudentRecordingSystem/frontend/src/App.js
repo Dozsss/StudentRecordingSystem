@@ -36,7 +36,19 @@ const App = () => {
 
 
   return (
-    <div>
+    <div
+      style={{
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center', // Added to ensure children are centered within the div
+      color: 'Black',
+      }}
+>
       <h1>Student Recording System</h1>
       <StudentForm addStudent={addStudent} />
       <StudentList students={students} />
